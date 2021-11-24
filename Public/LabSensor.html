@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+<title>Monitoreo</title> <!--Titulo pestaña de chrome-->
+
+<link rel="stylesheet" href="css/Sensor.css">
+</head>
+<body onload="SetCurrentUser()">
+<center>
+<h1>Monitoreo</h1>
+</center>
+<div class="container">
+    <center> <!--Creación de tablas-->
+        <table>
+            <tr>
+                <th><!--Columna-->
+                    <p>Usuario</p>
+                </th>
+                <th><!--Columna-->
+                    <p id="ShowUser">Default</p>
+                </th>
+            </tr> 
+            
+        </table>
+    </center> 
+    
+    <center>
+
+
+        <table>
+            <tr>
+              <th scope="col">Sensor</th>
+              <th scope="col">Temperatura</th>
+              <th scope="col">Humedad</th>
+            </tr>
+          
+            <tr>
+              <td><p id="T11">Default</p></td>
+              <td><p id="T12">Default</p></td>
+              <td><p id="T13">Default</p></td>
+            </tr>
+          
+            <tr>
+                <td><p id="T21">Default</p></td>
+                <td><p id="T22">Default</p></td>
+                <td><p id="T23">Default</p></td>
+            </tr>
+          
+            <tr>
+                <td><p id="T31">Default</p></td>
+                <td><p id="T32">Default</p></td>
+                <td><p id="T33">Default</p></td>
+            </tr>
+          
+          </table>
+
+    </center>
+
+    <center>
+        <h1>Actuadores</h1>
+        <table>
+            <tr>
+              <th scope="col">Actuador</th>
+              <th scope="col">ON</th>
+              <th scope="col">OFF</th>
+            </tr>
+          
+            <tr>
+                <td><p id="K1">A1</p></td>
+                <td><input type="radio" name="sensor1" value="ON" onclick="ModifyActuator('A1','ON')"></td>
+                <td><input type="radio" name="sensor1" value="OFF" onclick="ModifyActuator('A1','OFF')"></td>
+            </tr>
+          
+            <tr>
+                <td><p id="K2">A2</p></td>
+                <td><input type="radio" name="sensor2" value="ON" onclick="ModifyActuator('A2','ON')"></td>
+                <td><input type="radio" name="sensor2" value="OFF" onclick="ModifyActuator('A2','OFF')"></td>
+            </tr>
+
+            <tr>
+                <td><p id="K3">A3</p></td>
+                <td><input type="radio" name="sensor3" value="ON" onclick="ModifyActuator('A3','ON')"></td>
+                <td><input type="radio" name="sensor3" value="OFF" onclick="ModifyActuator('A3','OFF')"></td>
+            </tr>
+          
+          </table>
+
+    </center>
+
+</div>
+
+
+
+<!--Agregamos script javascript-->
+<script src="js/LabSensor.js"></script>
+
+<!--Agregamos script jquery-->
+<script src="jquery/jquery.min.js"></script>
+<script src="jquery-easing/jquery.easing.min.js"></script>
+</body>
+</html>

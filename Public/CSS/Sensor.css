@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(29, 181, 201);
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 40px;
+}
+td{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+p{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+th{
+    font-family: sans-serif;
+    font-size: 20px;
+}
